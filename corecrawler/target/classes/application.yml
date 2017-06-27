@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: crawler
+  cloud:
+    config:
+      uri: http://localhost:8888

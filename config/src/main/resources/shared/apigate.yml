@@ -1,0 +1,21 @@
+#zuul:
+# routes:
+#  search:
+#   url: http://localhost:8070        
+#ribbon:
+# eureka:
+#  enabled: false          
+  
+server:
+ port: 8080
+ 
+crawler:
+  ribbon:  
+    listOfServers: localhost:8070,localhost:8011,localhost:8012
+    ServerListRefreshInterval: 15000
+ 
+
+search:
+  ribbon:
+    listOfServers: localhost:8060,localhost:8061,localhost:8062
+    ServerListRefreshInterval: 15000
